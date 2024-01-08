@@ -10,7 +10,7 @@ export default function Navbar() {
     const handleScroll = () => {
         const currentScrollPos = window.scrollY;
 
-        if (currentScrollPos > prevScrollPos) {
+        if (currentScrollPos < prevScrollPos) {
             setVisible(false);
         } else {
             setVisible(true);
@@ -19,40 +19,26 @@ export default function Navbar() {
         setPrevScrollPos(currentScrollPos);
     };
 
-    const handleNavbarTop = () => {
-        const nav = document.querySelector(".nav"),
-        navItems = document.querySelector(".nav-items"),
-        navHome = document.querySelector(".nav-home"),
-        navTop = document.querySelector(".nav-top"),
-        icon = document.querySelector(".hamburger i");
-
-        let isOpen = false;
-
-        gsap.set(nav, { height: "60px" });
-        gsap.set(navTop, { opacity: 0, scale: 0.9, display: "none" });
-        gsap.set(navItems, { opacity: 1, display: "flex" });
-        gsap.set(navHome, { flexGrow: 0 });
-
-        
-    }
 
     useEffect(() => {
-    
-        
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     });
 
     return (
-        <header className={`navbar ${visible ? "translate-y-28" : "translate-x-0"} `}>
+        <header
+            className={`navbar delay-250 ${
+                visible ? "translate-y-28" : "translate-x-0"
+            } `}
+        >
             <div className="inner">
                 <div className="nav-float__inner">
                     {/* Back to top button */}
 
                     <div className="nav-float__wrapper">
-                        {/* <div class="nav-top">
+                        <div className="nav-float__top">
                             <h4>This is top of menu float</h4>
-                        </div> */}
+                        </div>
 
                         <div className="nav-float__bottom">
                             <div className="menu-float__layout menu-float__layout--primary">
@@ -69,7 +55,9 @@ export default function Navbar() {
                                         className="menu-float__hamburger"
                                         id="toggle"
                                     >
-                                        <RxHamburgerMenu />
+                                        <i>
+                                            <RxHamburgerMenu />
+                                        </i>
                                     </div>
                                 </div>
                             </div>
