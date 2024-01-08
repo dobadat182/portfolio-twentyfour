@@ -5,28 +5,46 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
-    const [visible, setVisible] = useState(true)
-    
+    const [visible, setVisible] = useState(true);
+
     const handleScroll = () => {
-        const currentScrollPos = window.scrollY
-    
-        if(currentScrollPos > prevScrollPos){
-            setVisible(false)
-        }else{
-            setVisible(true)
+        const currentScrollPos = window.scrollY;
+
+        if (currentScrollPos > prevScrollPos) {
+            setVisible(false);
+        } else {
+            setVisible(true);
         }
-    
-        setPrevScrollPos(currentScrollPos)
+
+        setPrevScrollPos(currentScrollPos);
+    };
+
+    const handleNavbarTop = () => {
+        const nav = document.querySelector(".nav"),
+        navItems = document.querySelector(".nav-items"),
+        navHome = document.querySelector(".nav-home"),
+        navTop = document.querySelector(".nav-top"),
+        icon = document.querySelector(".hamburger i");
+
+        let isOpen = false;
+
+        gsap.set(nav, { height: "60px" });
+        gsap.set(navTop, { opacity: 0, scale: 0.9, display: "none" });
+        gsap.set(navItems, { opacity: 1, display: "flex" });
+        gsap.set(navHome, { flexGrow: 0 });
+
+        
     }
+
+    useEffect(() => {
     
-    useEffect( () => {
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => window.removeEventListener('scroll', handleScroll)
-    })
+        
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    });
 
     return (
-        <header className={`navbar ${visible ? 'translate-y-28' : ''} `}>
+        <header className={`navbar ${visible ? "translate-y-28" : "translate-x-0"} `}>
             <div className="inner">
                 <div className="nav-float__inner">
                     {/* Back to top button */}
