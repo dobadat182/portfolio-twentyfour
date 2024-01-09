@@ -1,9 +1,126 @@
+"use client";
+
+import Image from "next/image";
+import styled from "styled-components";
+
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
+import avatar from "../../../../public/images/me.jpg";
+import shapeWawes from "../../../../public/icons/shape-wawes.svg";
+import shapeCircle from "../../../../public/icons/shape-circle.svg";
+
 export default function Hero() {
     return (
-        <div>
-            <h1> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sit voluptates, aut quos molestias accusamus nesciunt dolore odit quas repudiandae dolor, doloribus, suscipit aliquid labore facere aliquam? Eos officia totam, perspiciatis fuga quia recusandae enim a explicabo incidunt. Aliquid dolore, numquam eos quidem provident voluptates fugit eligendi quia in culpa cum sit blanditiis ex. Praesentium perferendis recusandae aperiam nostrum eius libero quo nisi accusantium, impedit, ab quod earum incidunt error dolorum pariatur voluptatibus, veritatis temporibus. Laborum officia distinctio magni aliquid, harum provident exercitationem temporibus necessitatibus dolorem quam quae eaque ex sint. Iure distinctio eos accusamus esse quaerat sunt delectus rem ut deleniti repellat expedita perspiciatis dignissimos odio modi cum quam quisquam laboriosam soluta quod, et reprehenderit? Commodi perferendis earum repudiandae labore nisi aliquid suscipit eaque eum obcaecati quasi consequatur eos magni accusamus nobis ea nesciunt nulla totam, rerum blanditiis quam! Rerum vero quae expedita enim repellat optio minima velit voluptatum explicabo sapiente dolor nobis, eius ad dolores voluptas odit magnam mollitia ea rem quia quibusdam accusamus recusandae quam. Aliquid fugiat odit quis saepe! Esse sed cum vitae molestias, ea qui ducimus, autem doloribus aspernatur, iusto fuga. Alias est atque assumenda, quasi, asperiores, aliquid soluta laborum tempora explicabo quod facere doloribus fugiat mollitia nihil. Obcaecati mollitia laudantium repellendus, impedit esse recusandae. Placeat veniam quisquam dolorem, a unde repellat, quam culpa rerum, maxime quod fugiat aspernatur inventore sunt ad hic ea nemo fuga molestiae soluta consectetur voluptas laudantium saepe sit temporibus. Quidem nam voluptatem animi ipsam excepturi iure maxime iusto a explicabo. Velit libero repudiandae, illum neque possimus pariatur distinctio esse error aliquam mollitia accusamus laboriosam quia necessitatibus corporis sit alias in culpa praesentium quibusdam magni expedita! Quisquam quae incidunt aliquam vero perspiciatis laboriosam ut consequuntur hic! Quod ad, architecto vero, quasi voluptate laudantium saepe ea voluptatem tenetur vitae qui esse optio eveniet obcaecati eaque rerum animi fuga provident velit et, blanditiis maxime? Eaque vitae nam atque quaerat explicabo accusantium ipsa blanditiis ad, expedita ut corrupti velit placeat laboriosam doloremque. Rerum quo veniam temporibus reprehenderit inventore quia debitis officiis. Cupiditate debitis numquam qui distinctio voluptatibus necessitatibus sunt impedit cum animi obcaecati. Corporis cupiditate quisquam itaque consequuntur deserunt voluptate dolor cum placeat nihil, tempore enim! Fugiat quam ullam beatae vero suscipit temporibus culpa voluptatem obcaecati facilis laborum commodi ex dignissimos quisquam at quibusdam iusto magni exercitationem aliquid quaerat, eos, explicabo ratione dicta! Ducimus doloribus perferendis laborum voluptatum tempora qui repudiandae delectus non voluptas minus eos explicabo enim vitae itaque nulla, fuga praesentium? Reiciendis, deserunt rerum ab dolor ex, nam officiis explicabo corporis sint ratione voluptatibus velit cumque est eius. Accusantium rem amet id similique sapiente saepe adipisci voluptas at. Eligendi, quod similique neque suscipit quidem voluptates nulla. Dolore iure fuga molestias accusamus, veniam iste voluptatibus est sit nihil asperiores maxime sint saepe ipsum similique? Velit odio, culpa accusantium odit, hic vitae veritatis itaque expedita ullam, corrupti quos tenetur. Voluptatibus ut libero excepturi! Architecto aut dolores eius ullam. Molestias magnam placeat omnis sequi consequuntur autem quisquam ipsam illo, sed, sit mollitia adipisci odio accusamus vero rem, architecto ratione vel temporibus quo ab sapiente reprehenderit? Id doloremque repellat vero iure cumque similique sequi sapiente optio itaque delectus voluptatum molestiae eaque quasi libero, alias distinctio dolor incidunt quo ipsam sit ullam totam soluta quibusdam perspiciatis! Molestias eos porro esse similique reprehenderit. Voluptatem labore dicta autem beatae nisi corporis in culpa necessitatibus consectetur consequatur, accusantium commodi sed blanditiis quam vel sunt esse ratione asperiores deserunt pariatur, et impedit aut unde provident. Ut, sapiente! Quasi est quaerat doloremque assumenda tempora, praesentium veniam eaque dolores sequi earum harum sed in saepe cum ut quod molestiae et! Nam aliquam repudiandae dolor atque ipsa distinctio eum hic explicabo ad, eius doloribus, at sapiente reiciendis iusto blanditiis officiis quisquam cupiditate. Expedita ad optio ratione ipsa hic rerum laboriosam illo. Aliquam porro hic cumque architecto suscipit laboriosam iure voluptas aut! Voluptatem et pariatur minima obcaecati beatae alias provident natus illo rem eos fugiat veniam optio aliquam aut a voluptatum, illum reprehenderit praesentium cum itaque similique? Consequatur doloribus voluptates recusandae fugiat nemo cum architecto optio porro in voluptate harum culpa necessitatibus rerum animi distinctio quae, blanditiis molestias voluptatibus aperiam nobis libero atque adipisci. Eos in dolor placeat, minus autem expedita? Ut, quasi pariatur. Deserunt delectus tenetur repudiandae incidunt itaque labore ea eius molestias doloremque cupiditate magni dolores sapiente adipisci, modi consequuntur aperiam similique rem ratione velit natus? Natus cumque eaque et voluptatibus, saepe magni dolorum magnam! Blanditiis laboriosam iste non quia mollitia quisquam reiciendis excepturi alias quod, libero ducimus corporis aperiam hic repudiandae explicabo, et praesentium impedit optio quasi commodi suscipit eum autem. Libero tempora sint placeat ex rem minus doloribus. Maxime ratione ex, voluptatum id eos, ullam illum fugit dicta atque nihil vitae amet ipsa sapiente provident quos eum eveniet quibusdam veniam error, soluta vero necessitatibus! Labore quasi maiores officia ut magnam adipisci sint accusamus, recusandae in debitis sit. Vitae officiis consectetur perspiciatis aspernatur error assumenda, reprehenderit asperiores quos deleniti dolorum veritatis tenetur in distinctio cupiditate. Repellendus ipsam rerum animi explicabo ut iusto aut odit perspiciatis nihil neque suscipit quaerat vitae, nostrum nesciunt unde saepe ducimus delectus molestias amet placeat temporibus minus pariatur. Eos incidunt suscipit, quidem earum asperiores eligendi libero illum corrupti molestias officia aperiam sunt? Culpa eveniet quae tenetur deserunt, esse eius alias, optio qui sed ea laboriosam quod, iusto ipsa distinctio explicabo nobis cum non suscipit nam ipsum molestiae consectetur obcaecati iste. Suscipit, excepturi accusamus molestias aut architecto beatae non officiis provident id optio placeat, accusantium eligendi vitae modi ipsum amet odio, sit delectus deserunt obcaecati fugit dolorum veniam qui? Necessitatibus asperiores quibusdam est nulla placeat. Iste, dignissimos amet obcaecati facere nobis iusto nulla quibusdam voluptatibus autem dolore a animi illum nesciunt velit, quisquam ad ratione, cumque maiores et voluptate. Quis magnam incidunt dicta animi officia eum est aliquam, in, voluptates, nesciunt nihil dolores architecto consequatur? Officia, quos incidunt culpa vitae, voluptatum iusto a nam itaque deleniti perferendis nemo veritatis, fugiat ut. Eaque quos, et iusto dolores magni deleniti voluptate. Assumenda quaerat unde id quo corrupti voluptas quod reprehenderit laborum?
-            </h1>
-        </div>        
-    )
+        <section className="hero">
+            <div className="container grid pt-8 home__container gap-y-16">
+                <div className="grid items-center mx-auto gap-y-8 md:gap-y-14 home__data md:order-2">
+                    <div className="flex flex-col order-3 text-2xl home__title md:order-none md:gap-y-4">
+                        <p className="text-2xl md:text-5xl">Hello I&apos;m Brian</p>
+                        <p className="text-2xl md:text-5xl">Frontend Developer</p>
+                        <p className="text-2xl md:text-5xl">Based in Ho Chi Minh</p>
+                    </div>
+
+                    <div className="grid order-1 home__blob md:-order-none">
+                        <div className="home__perfil">
+                            <Image
+                                src={avatar}
+                                loading="eager"
+                                priority={true}
+                                alt="home perfil"
+                            />
+                        </div>
+
+                        <Image
+                            src={shapeWawes}
+                            alt=""
+                            loading="eager"
+                            priority={true}
+                            className="home__shape-wawes"
+                        />
+                        <Image
+                            src={shapeCircle}
+                            alt=""
+                            loading="eager"
+                            priority={true}
+                            className="home__shape-circle"
+                        />
+                    </div>
+
+                    <div className="order-2 home__social md:-order-none">
+                        <a
+                            href="https://www.linkedin.com/in/badat182/"
+                            target="_blank"
+                            className="home__social-link"
+                        >
+                            <i>
+                                <FaLinkedin />
+                            </i>
+                        </a>
+                        <a
+                            href="https://github.com/dobadat182"
+                            target="_blank"
+                            className="home__social-link"
+                        >
+                            <i>
+                                <FaGithub />
+                            </i>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="grid-rows-3 mt-60 home__info gap-y-16 md:order-1 !hidden md:!grid">
+                    <div>
+                        <h3 className="home__info-title">BIOGRAPHY</h3>
+                        <p className="home__info-description">
+                            Hi, I&apos;m Dat, Frontend Developer. Passionate
+                            about designing beautiful web interfaces, Based in
+                            Ho Chi Minh city
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="home__info-title">CONTACT</h3>
+                        <a
+                            href="mailto: badat336@gmail.com"
+                            className="home__info-description"
+                        >
+                            badat336@gmail.com
+                        </a>
+                    </div>
+                    <div>
+                        <h3 className="home__info-title"></h3>
+                        <ul className="home__info-description">
+                            <li>Website</li>
+                            <li>Animation</li>
+                            <li>Wordpress</li>
+                            <li>React/Next</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="grid-rows-3 mt-60 home__info gap-y-16 md:order-3 !hidden md:!grid">
+                    <div>
+                        <h3 className="home__info-title">
+                            YEARS OF EXPERIENCE
+                        </h3>
+                        <div className="home__info-number">
+                            <span>02</span>+
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className="home__info-title">COMPLETED PROJECTS</h3>
+                        <div className="home__info-number">
+                            <span>10</span>+
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className="home__info-title">COMPANIES WORKED</h3>
+                        <div className="home__info-number">
+                            <span>02</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 }
