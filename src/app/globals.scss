@@ -17,22 +17,18 @@
 
     /* ... */
     :root {
-        --foreground-rgb: 0, 0, 0;
-        --background-start-rgb: 214, 219, 220;
-        --background-end-rgb: 255, 255, 255;
+        --background-body: #fdfdfd;
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --foreground-rgb: 255, 255, 255;
-            --background-start-rgb: 0, 0, 0;
-            --background-end-rgb: 0, 0, 0;
+            --background-body: #252525;
         }
     }
 }
 
 body {
-    background-color: #fdfdfd;
+    background-color: var(--background-body);
     text-rendering: optimizeLegibility;
     font-family: "Roboto", sans-serif;
 }
@@ -218,7 +214,7 @@ header {
     height: 200vh;
     &__container {
         grid-template-columns: 1fr 2fr 1fr;
-        @media (max-width: 575px) {
+        @media (max-width: 768px) {
             grid-template-columns: none;
         }
     }
@@ -255,6 +251,11 @@ header {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+
+        &:hover {
+
+        }
+
         @media (min-width: 1200px) {
             width: 340px;
             height: 520px;
