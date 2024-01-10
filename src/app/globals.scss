@@ -22,7 +22,6 @@
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --background-body: #252525;
         }
     }
 }
@@ -210,8 +209,10 @@ header {
     }
 }
 
+.hero {
+    // height: 200vh;
+}
 .home {
-    height: 200vh;
     &__container {
         grid-template-columns: 1fr 2fr 1fr;
         @media (max-width: 768px) {
@@ -332,15 +333,26 @@ header {
             @apply text-xl;
             @apply text-base;
             color: hsl(207, 4%, 16%);
-            font-family: 'Lora', sans-serif;
+            // font-family: 'Lora', sans-serif;
+            @apply font-sans;
         }
         &-number {
             @apply text-4xl;
-            font-family: 'Lora', sans-serif;
+            @apply font-sans;
+
+            // font-family: 'Lora', sans-serif;
         }
 
         &:nth-child(3) * {
             text-align: right;
+        }
+    }
+}
+
+#projects {
+    .splide {
+        &__slide {
+            padding-bottom: 10px;
         }
     }
 }

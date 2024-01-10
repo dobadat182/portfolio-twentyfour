@@ -41,3 +41,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 #FAEED1
 #DED0B6
 #B2A59B
+
+<!-- Section -->
+Introduce
+Projects
+Skills
+Timeline
+Contact

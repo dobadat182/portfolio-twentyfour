@@ -1,5 +1,7 @@
 import "./globals.scss";
-import Navbar from "@/components/Navbar/Navbar";
+import '@splidejs/react-splide/css/core';
+
+import Header from "@/components/header/Header";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
@@ -11,7 +13,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                <Navbar />
+                <Header />
                 {children}
                 <Footer />
             </body>

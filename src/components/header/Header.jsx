@@ -3,14 +3,14 @@
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-export default function Navbar() {
+export default function Header() {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
 
     const handleScroll = () => {
         const currentScrollPos = window.scrollY;
 
-        if (currentScrollPos < prevScrollPos ) {
+        if (currentScrollPos > prevScrollPos ) {
             setVisible(false);
         } else {
             setVisible(true);
@@ -28,7 +28,7 @@ export default function Navbar() {
     return (
         <header
             className={`navbar delay-250 ${
-                visible ? "translate-y-28" : "translate-x-0"
+                visible ? "translate-x-0" : "translate-y-28"
             } `}
         >
             <div className="inner">

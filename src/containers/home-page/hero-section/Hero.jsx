@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import Image from "next/image";
 
 import { FaLinkedin } from "react-icons/fa";
@@ -11,13 +13,19 @@ import shapeCircle from "../../../../public/icons/shape-circle.svg";
 
 export default function Hero() {
     return (
-        <section className="hero">
+        <section className="px-5 hero pb-28 lg:px-5">
             <div className="container grid pt-10 md:pt-8 home__container gap-y-16">
                 <div className="grid items-center mx-auto gap-y-8 md:gap-y-14 home__data md:order-2">
                     <div className="flex flex-col order-3 text-2xl home__title md:order-none md:gap-y-4">
-                        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Hello I&apos;m Brian</p>
-                        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Frontend Developer</p>
-                        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Based in Ho Chi Minh</p>
+                        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                            Hello I&apos;m Brian
+                        </p>
+                        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                            Frontend Developer
+                        </p>
+                        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                            Based in Ho Chi Minh
+                        </p>
                     </div>
 
                     <div className="grid order-1 home__blob md:-order-none">
@@ -25,6 +33,7 @@ export default function Hero() {
                             <Image
                                 src={avatar}
                                 loading="eager"
+                                draggable="false"
                                 priority={true}
                                 alt="home perfil"
                             />
@@ -33,13 +42,16 @@ export default function Hero() {
                         <Image
                             src={shapeWawes}
                             alt=""
+                            draggable="false"
                             loading="eager"
                             priority={true}
                             className="home__shape-wawes"
                         />
+
                         <Image
                             src={shapeCircle}
                             alt=""
+                            draggable="false"
                             loading="eager"
                             priority={true}
                             className="home__shape-circle"
