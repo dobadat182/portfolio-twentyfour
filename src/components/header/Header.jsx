@@ -71,7 +71,7 @@ export default function Header() {
                                     <ul className="menu-float__nav">
                                         <li>
                                             <a
-                                                href="#"
+                                                href="#hero"
                                                 className="menu-float__item is-active"
                                             >
                                                 Intro
@@ -79,10 +79,10 @@ export default function Header() {
                                         </li>
                                         <li>
                                             <a
-                                                href="#"
+                                                href="#projects"
                                                 className="menu-float__item"
                                             >
-                                                Skills
+                                                Projects
                                             </a>
                                         </li>
                                         <li>

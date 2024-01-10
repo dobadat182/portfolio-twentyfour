@@ -5,7 +5,6 @@ import ProjectCard from "@/components/cards/Project-card/Project-card";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
-import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
@@ -39,7 +38,7 @@ export default function Projects() {
         {
             id: 4,
             image: "",
-            name: "It's take your village",
+            name: "It's take a village",
             desc: "",
             url: "https://yourvillage.com.au/",
             skills: ["Wordpress", "Javascript", "Ajax", "Greensock"],
@@ -107,9 +106,9 @@ export default function Projects() {
 
         breakpoints: {
             768: {
-                padding: "20px",
-                gap: "10px",
-                fixedWidth: "100%",
+                padding: { right: "20px" },
+                gap: 20,
+                fixedWidth: "90%",
                 autoScroll: false,
             },
         },
@@ -125,18 +124,19 @@ export default function Projects() {
                     options={options}
                     extensions={{ AutoScroll }}
                 >
-                    <h2
-                        id="carousel-heading"
-                        className="text-5xl font-bold text-center uppercase"
-                    >
-                        Projects
-                    </h2>
-
-                    <div class="splide__arrows flex justify-between px-5 my-5">
-                        <button class="splide__arrow splide__arrow--prev">
+                    <div class="splide__arrows flex justify-between md:justify-center px-5 my-5 md:my-10">
+                        <button class="splide__arrow splide__arrow--prev md:hidden">
                             <FaChevronLeft />
                         </button>
-                        <button class="splide__arrow splide__arrow--next">
+
+                        <h2
+                            id="carousel-heading"
+                            className="text-3xl font-medium text-center uppercase md:text-5xl"
+                        >
+                            Projects
+                        </h2>
+                        
+                        <button class="splide__arrow splide__arrow--next md:hidden">
                             <FaChevronRight />
                         </button>
                     </div>
@@ -144,7 +144,10 @@ export default function Projects() {
                     <SplideTrack>
                         {projects.map((element, index) => (
                             <SplideSlide key={index}>
-                                <ProjectCard name={element.name} url={element.url} />
+                                <ProjectCard
+                                    name={element.name}
+                                    url={element.url}
+                                />
                             </SplideSlide>
                         ))}
                     </SplideTrack>

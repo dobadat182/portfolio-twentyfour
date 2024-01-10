@@ -7,17 +7,20 @@
 @tailwind components;
 @tailwind utilities;
 
+$font-primary: 'Lora', sans-serif;
+$background-body: #fdfdfd;
 @layer base {
     h1 {
         @apply text-2xl;
     }
     h2 {
         @apply text-xl;
+        font-family: $font-primary;
     }
 
     /* ... */
     :root {
-        --background-body: #fdfdfd;
+        scroll-behavior: smooth;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -27,7 +30,7 @@
 }
 
 body {
-    background-color: var(--background-body);
+    background-color: $background-body;
     text-rendering: optimizeLegibility;
     font-family: "Roboto", sans-serif;
 }

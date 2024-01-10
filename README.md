@@ -48,3 +48,9 @@ Projects
 Skills
 Timeline
 Contact
+
+<!-- Spacing -->
+
+Spacing giu cac section: 80px
+
+Spacing giu cac item: desktop 40 | mobile 20

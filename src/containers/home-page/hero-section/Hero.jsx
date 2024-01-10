@@ -13,7 +13,7 @@ import shapeCircle from "../../../../public/icons/shape-circle.svg";
 
 export default function Hero() {
     return (
-        <section className="px-5 hero pb-28 lg:px-5">
+        <section id="hero" className="px-5 hero pb-28 lg:px-5">
             <div className="container grid pt-10 md:pt-8 home__container gap-y-16">
                 <div className="grid items-center mx-auto gap-y-8 md:gap-y-14 home__data md:order-2">
                     <div className="flex flex-col order-3 text-2xl home__title md:order-none md:gap-y-4">
