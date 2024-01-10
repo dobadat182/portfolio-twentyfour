@@ -4,9 +4,7 @@ export default function ProjectCard(props) {
     return (
         <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
             <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-sm rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
-                <div className="w-[384px] h-[256px]">
-                    Default images
-                </div>
+                <div className="w-[384px] h-[256px]">Default images</div>
                 <div className="absolute inset-0 w-full h-full bg-gray-300"></div>
                 <button
                     className="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -27,7 +25,7 @@ export default function ProjectCard(props) {
             <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
                     <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
-                        { props.name || 'Wooden House, Florida' }
+                        {props.name || "Wooden House, Florida"}
                     </h5>
                 </div>
                 <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
@@ -35,7 +33,7 @@ export default function ProjectCard(props) {
                     home surrounded by ancient trees, stone walls, and open
                     meadows.
                 </p>
-                <div className="inline-flex flex-wrap items-center gap-3 mt-8 group">
+                <div className="flex-wrap items-center hidden gap-3 mt-8 md:inline-flex group">
                     <span className="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -112,12 +110,13 @@ export default function ProjectCard(props) {
                 </div>
             </div>
             <div className="p-6 pt-3">
-                <button
+                <a
+                    href={props.url}
                     className="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                    type="button"
+                    target="_blank"
                 >
                     View
-                </button>
+                </a>
             </div>
         </div>
     );

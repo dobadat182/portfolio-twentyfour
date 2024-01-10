@@ -132,21 +132,19 @@ export default function Projects() {
                         Projects
                     </h2>
 
-                    <div className="flex justify-center my-5 custom-arrows">
-                        <div class="splide__arrows flex gap-x-3">
-                            <button class="splide__arrow splide__arrow--prev">
-                                <FaChevronLeft />
-                            </button>
-                            <button class="splide__arrow splide__arrow--next">
-                                <FaChevronRight />
-                            </button>
-                        </div>
+                    <div class="splide__arrows flex justify-between px-5 my-5">
+                        <button class="splide__arrow splide__arrow--prev">
+                            <FaChevronLeft />
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                            <FaChevronRight />
+                        </button>
                     </div>
 
                     <SplideTrack>
                         {projects.map((element, index) => (
                             <SplideSlide key={index}>
-                                <ProjectCard name={element.name} />
+                                <ProjectCard name={element.name} url={element.url} />
                             </SplideSlide>
                         ))}
                     </SplideTrack>
