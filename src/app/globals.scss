@@ -7,7 +7,7 @@
 @tailwind components;
 @tailwind utilities;
 
-$font-primary: 'Lora', sans-serif;
+$font-primary: "Lora", sans-serif;
 $background-body: #fdfdfd;
 @layer base {
     h1 {
@@ -224,7 +224,7 @@ header {
     }
 
     &__title {
-        font-family: 'Lora', sans-serif;
+        font-family: "Lora", sans-serif;
         p {
             text-align: center;
         }
@@ -257,7 +257,6 @@ header {
         align-items: flex-end;
 
         &:hover {
-
         }
 
         @media (min-width: 1200px) {
@@ -326,13 +325,15 @@ header {
 
     &__info {
         grid-template-rows: repeat(3, 130px);
-        
+
         h3 {
             @apply text-sm;
             color: hsl(207, 4%, 56%);
             margin-bottom: 1rem;
         }
-        p, a, ul {
+        p,
+        a,
+        ul {
             @apply text-xl;
             @apply text-base;
             color: hsl(207, 4%, 16%);
@@ -356,6 +357,30 @@ header {
     .splide {
         &__slide {
             padding-bottom: 10px;
+        }
+    }
+}
+
+.badge {
+    &__item {
+        @apply relative inline-flex justify-center items-center overflow-hidden bg-slate-100 px-3 py-2 rounded-md transition-all duration-200 cursor-pointer text-sm md:text-base;
+
+        &.frequently::after {
+            content: "";
+            @apply absolute block w-full bottom-0 h-0.5 bg-slate-200 left-0;
+        }
+        &.occasionally::after {
+            content: "";
+            @apply absolute block w-1/4 bottom-0 h-0.5 bg-slate-200 left-0;
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+
+            &.frequently::after,
+            &.occasionally::after {
+                @apply bg-slate-400;
+            }
         }
     }
 }

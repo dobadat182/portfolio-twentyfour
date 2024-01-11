@@ -83,6 +83,14 @@ export default function Projects() {
             url: "https://bongiorno.com.au/",
             skills: ["Wordpress", "Javascript", "Ajax", "Greensock"],
         },
+        {
+            id: 9,
+            image: "",
+            name: "Mintlabo",
+            desc: "",
+            url: "https://mintlabo.com/",
+            skills: ["Wordpress", "Elementer"]
+        }
     ];
     const options = {
         type: "loop",
@@ -124,8 +132,8 @@ export default function Projects() {
                     options={options}
                     extensions={{ AutoScroll }}
                 >
-                    <div class="splide__arrows flex justify-between md:justify-center px-5 my-5 md:my-10">
-                        <button class="splide__arrow splide__arrow--prev md:hidden">
+                    <div className="flex justify-between px-5 my-5 splide__arrows md:justify-center md:my-10">
+                        <button className="splide__arrow splide__arrow--prev md:hidden">
                             <FaChevronLeft />
                         </button>
 
@@ -136,7 +144,7 @@ export default function Projects() {
                             Projects
                         </h2>
                         
-                        <button class="splide__arrow splide__arrow--next md:hidden">
+                        <button className="splide__arrow splide__arrow--next md:hidden">
                             <FaChevronRight />
                         </button>
                     </div>
