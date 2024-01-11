@@ -1,6 +1,7 @@
 import Hero from "@/containers/home-page/hero-section/Hero";
 import Projects from "@/containers/home-page/projects-section/Projects";
 import Skill from "@/containers/home-page/skill-section/Skill";
+import Timeline from "@/containers/home-page/timeline-section/Timeline";
 
 export default function Home() {
     return (
@@ -8,6 +9,7 @@ export default function Home() {
             <Hero />
             <Projects />
             <Skill />
+            <Timeline />
         </main>
     );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "@/components/cards/Project-card/Project-card";
+import CardProject from "@/components/cards/card-project/CardProject";
 
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
@@ -54,7 +54,7 @@ export default function Projects() {
         {
             id: 6,
             image: "",
-            name: "App - Conecta",
+            name: "Conecta App",
             desc: "",
             url: "https://app.conecta.com.au/login?redirect=%2F",
             skills: ["NuxtJS", "Typescript", "Axios", "Greensock"],
@@ -114,9 +114,7 @@ export default function Projects() {
 
         breakpoints: {
             768: {
-                padding: { right: "20px" },
-                gap: 20,
-                fixedWidth: "90%",
+                gap: 15,
                 autoScroll: false,
             },
         },
@@ -152,7 +150,7 @@ export default function Projects() {
                     <SplideTrack>
                         {projects.map((element, index) => (
                             <SplideSlide key={index}>
-                                <ProjectCard
+                                <CardProject
                                     name={element.name}
                                     url={element.url}
                                 />
