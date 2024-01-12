@@ -2,7 +2,6 @@ import "./globals.scss";
 import '@splidejs/react-splide/css/core';
 
 import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
 
 export const metadata = {
     title: "Brian Do",
@@ -15,7 +14,6 @@ export default function RootLayout({ children }) {
             <body>
                 <Header />
                 {children}
-                <Footer />
             </body>
         </html>
     );
