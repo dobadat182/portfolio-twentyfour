@@ -122,7 +122,7 @@ export default function Projects() {
 
     useEffect(() => {});
     return (
-        <section id="projects" className="w-full my-32">
+        <section id="projects" className="w-full mb-14 md:mb-32">
             <div className="inner">
                 <Splide
                     tag="section"

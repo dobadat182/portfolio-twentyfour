@@ -1,6 +1,6 @@
 export default function Skill() {
     return (
-        <div className="container mx-auto mb-96" id="skills">
+        <div className="container mx-auto mb-14 md:mb-32" id="skills">
             <div className="inner">
                 <div className="inner__wrapper">
                     <div className="mb-10 text-center inner__heading">
