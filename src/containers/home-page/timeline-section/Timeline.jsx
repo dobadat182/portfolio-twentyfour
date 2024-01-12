@@ -76,7 +76,7 @@ export default function Timeline() {
                                                     <li className="text-sm font-normal text-gray-500 md:text-base">
                                                         Cooperate with other
                                                         departments to improve
-                                                        product's qualities.
+                                                        product qualities.
                                                     </li>
                                                     <li className="text-sm font-normal text-gray-500 md:text-base">
                                                         Optimize SEO techniques
