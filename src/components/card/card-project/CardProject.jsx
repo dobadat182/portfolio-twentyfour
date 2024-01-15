@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CardProject(props) {
     return (
-        <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div className="relative flex w-full max-w-[26rem] flex-col rounded-md bg-white bg-clip-border text-gray-700 shadow-md">
             <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-sm rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
                 <div className="w-[384px] h-[256px]">Default images</div>
                 <div className="absolute inset-0 w-full h-full bg-gray-300"></div>
@@ -18,7 +18,7 @@ export default function CardProject(props) {
                     home surrounded by ancient trees, stone walls, and open
                     meadows.
                 </p>
-                <div className="flex-wrap items-center hidden gap-3 mt-8 md:inline-flex group">
+                {/* <div className="flex-wrap items-center hidden gap-3 mt-8 md:inline-flex group">
                     <span className="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ export default function CardProject(props) {
                     <span className="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70">
                         +20
                     </span>
-                </div>
+                </div> */}
             </div>
             <div className="p-6 pt-3">
                 <a

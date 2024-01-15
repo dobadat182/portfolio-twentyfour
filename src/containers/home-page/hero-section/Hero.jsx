@@ -18,7 +18,7 @@ export default function Hero() {
                 <div className="grid items-center mx-auto gap-y-8 md:gap-y-14 home__data md:order-2">
                     <div className="flex flex-col order-3 text-2xl home__title md:order-none md:gap-y-4">
                         <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-                            Hello I&apos;m Brian
+                            Hello I&apos;m <h1>Brian</h1>
                         </p>
                         <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
                             Frontend Developer
@@ -32,7 +32,8 @@ export default function Hero() {
                         <div className="home__perfil">
                             <Image
                                 src={avatar}
-                                loading="eager"
+                                className="pointer-events-none"
+                                loading="lazy"
                                 draggable="false"
                                 priority={true}
                                 alt="home perfil"
@@ -46,7 +47,7 @@ export default function Hero() {
                             draggable="false"
                             loading="eager"
                             priority={true}
-                            className="home__shape-wawes"
+                            className="pointer-events-none home__shape-wawes"
                         />
 
                         <Image
@@ -55,7 +56,7 @@ export default function Hero() {
                             draggable="false"
                             loading="eager"
                             priority={true}
-                            className="home__shape-circle"
+                            className="pointer-events-none home__shape-circle"
                         />
                     </div>
 

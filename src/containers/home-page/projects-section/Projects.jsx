@@ -89,8 +89,8 @@ export default function Projects() {
             name: "Mintlabo",
             desc: "",
             url: "https://mintlabo.com/",
-            skills: ["Wordpress", "Elementer"]
-        }
+            skills: ["Wordpress", "Elementer"],
+        },
     ];
     const options = {
         type: "loop",
@@ -114,8 +114,10 @@ export default function Projects() {
 
         breakpoints: {
             768: {
-                gap: 15,
+                fixedWidth: "90%",
+                gap: 20,
                 autoScroll: false,
+                padding: { right: "20" },
             },
         },
     };
@@ -141,7 +143,7 @@ export default function Projects() {
                         >
                             Projects
                         </h2>
-                        
+
                         <button className="splide__arrow splide__arrow--next md:hidden">
                             <FaChevronRight />
                         </button>
