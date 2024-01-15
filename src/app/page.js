@@ -1,7 +1,9 @@
-import Hero from "@/containers/home-page/hero-section/Hero";
-import Projects from "@/containers/home-page/projects-section/Projects";
-import Skill from "@/containers/home-page/skill-section/Skill";
-import Timeline from "@/containers/home-page/timeline-section/Timeline";
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("@/containers/home-page/hero-section/Hero"));
+const Projects = dynamic(() => import("@/containers/home-page/projects-section/Projects"));
+const Skill = dynamic(() => import("@/containers/home-page/skill-section/Skill"));
+const Timeline = dynamic(() => import("@/containers/home-page/timeline-section/Timeline"));
 
 export default function Home() {
     return (
