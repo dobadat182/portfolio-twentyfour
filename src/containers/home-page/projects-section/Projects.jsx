@@ -1,6 +1,6 @@
 "use client";
 
-import CardProject from "@/components/cards/card-project/CardProject";
+import CardProject from "@/components/card/card-project/CardProject";
 
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
@@ -46,7 +46,7 @@ export default function Projects() {
         {
             id: 5,
             image: "",
-            name: "Integra Lighting",
+            name: "Integral Lighting",
             desc: "",
             url: "https://www.integrallighting.com.au",
             skills: ["Wordpress", "Javascript", "Ajax", "Greensock"],
@@ -56,7 +56,7 @@ export default function Projects() {
             image: "",
             name: "Conecta App",
             desc: "",
-            url: "https://app.conecta.com.au/login?redirect=%2F",
+            url: "https://app.conecta.com.au",
             skills: ["NuxtJS", "Typescript", "Axios", "Greensock"],
         },
         {
