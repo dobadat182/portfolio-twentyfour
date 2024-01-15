@@ -7,7 +7,7 @@ import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-import avatar from "../../../../public/images/me.jpg";
+import avatar from "../../../../public/images/me.webp";
 import shapeWawes from "../../../../public/icons/shape-wawes.svg";
 import shapeCircle from "../../../../public/icons/shape-circle.svg";
 
@@ -36,6 +36,7 @@ export default function Hero() {
                                 draggable="false"
                                 priority={true}
                                 alt="home perfil"
+                                rel="preload"
                             />
                         </div>
 
