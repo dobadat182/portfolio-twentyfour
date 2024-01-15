@@ -9,9 +9,9 @@ export default function CardProject(props) {
             </div>
             <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                    <h5 className="block font-sans text-lg antialiased font-medium leading-snug tracking-normal md:text-xl text-blue-gray-900">
-                        {props.name || "Wooden House, Florida"}
-                    </h5>
+                    <h4 className="block font-sans text-lg antialiased font-medium leading-snug tracking-normal md:text-xl text-blue-gray-900">
+                        {props.name || "Project Name"}
+                    </h4>
                 </div>
                 <p className="block font-sans text-sm antialiased font-light leading-relaxed text-gray-700 md:text-base">
                     Enter a freshly updated and thoughtfully furnished peaceful

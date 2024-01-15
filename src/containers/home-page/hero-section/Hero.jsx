@@ -42,7 +42,7 @@ export default function Hero() {
 
                         <Image
                             src={shapeWawes}
-                            alt=""
+                            alt="shape wawes"
                             draggable="false"
                             loading="eager"
                             priority={true}
@@ -51,7 +51,7 @@ export default function Hero() {
 
                         <Image
                             src={shapeCircle}
-                            alt=""
+                            alt="shape circle"
                             draggable="false"
                             loading="eager"
                             priority={true}
@@ -64,6 +64,7 @@ export default function Hero() {
                             href="https://www.linkedin.com/in/badat182/"
                             target="_blank"
                             className="home__social-link"
+                            alt="linkedin"
                         >
                             <i>
                                 <FaLinkedin />
@@ -73,6 +74,7 @@ export default function Hero() {
                             href="https://github.com/dobadat182"
                             target="_blank"
                             className="home__social-link"
+                            alt="github"
                         >
                             <i>
                                 <FaGithub />

@@ -28,9 +28,9 @@ export default function Skill() {
 
                         <div className="flex gap-x-4 md:gap-x-3 skill__topic">
                             <div className="basis-1/4">
-                                <h4 className="py-1 text-base font-bold md:text-lg">
+                                <h5 className="py-1 text-base font-bold md:text-lg">
                                     Languages:
-                                </h4>
+                                </h5>
                             </div>
                             <ul className="flex flex-wrap justify-end gap-2 text-base md:justify-start basis-3/4 columns-2 text-nowrap">
                                 <li className="badge__item frequently">
@@ -50,7 +50,7 @@ export default function Skill() {
 
                         <div className="flex gap-x-4 skill__topic">
                             <div className="basis-1/4">
-                                <h4 className="py-1 text-base font-bold md:text-lg">CMS:</h4>
+                                <h5 className="py-1 text-base font-bold md:text-lg">CMS:</h5>
                             </div>
                             <ul className="flex flex-wrap justify-end gap-2 text-base md:justify-start basis-3/4 columns-2 text-nowrap">
                                 <li className="badge__item frequently">
@@ -69,9 +69,9 @@ export default function Skill() {
 
                         <div className="flex gap-x-3 skill__topic">
                             <div className="basis-1/4">
-                                <h4 className="py-1 text-base font-bold md:text-lg">
+                                <h5 className="py-1 text-base font-bold md:text-lg">
                                     Frameworks:
-                                </h4>
+                                </h5>
                             </div>
                             <ul className="flex flex-wrap justify-end gap-2 text-base md:justify-start basis-3/4 columns-2 text-nowrap">
                                 <li className="badge__item frequently">
@@ -92,9 +92,9 @@ export default function Skill() {
 
                         <div className="flex gap-x-3 skill__topic">
                             <div className="basis-1/4">
-                                <h4 className="py-1 text-base font-bold md:text-lg">
+                                <h5 className="py-1 text-base font-bold md:text-lg">
                                     Tools & Softwares:
-                                </h4>
+                                </h5>
                             </div>
                             <ul className="flex flex-wrap justify-end gap-2 text-base md:justify-start basis-3/4 columns-2 text-nowrap">
                                 <li className="badge__item frequently">Git</li>
@@ -114,9 +114,9 @@ export default function Skill() {
 
                         <div className="flex gap-x-3 skill__topic">
                             <div className="basis-1/4">
-                                <h4 className="py-1 text-base font-bold md:text-lg">
+                                <h5 className="py-1 text-base font-bold md:text-lg">
                                     Libraries:
-                                </h4>
+                                </h5>
                             </div>
                             <ul className="flex flex-wrap justify-end gap-2 text-base md:justify-start basis-3/4 columns-2 text-nowrap">
                                 <li className="badge__item">Algolia</li>
