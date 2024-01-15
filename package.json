@@ -12,6 +12,7 @@
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "axios": "^1.6.5",
     "framer-motion": "^10.17.12",
     "next": "14.0.4",
     "react": "^18",
