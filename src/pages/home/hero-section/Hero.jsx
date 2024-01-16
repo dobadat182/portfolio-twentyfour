@@ -10,16 +10,14 @@ import { FaGithub } from "react-icons/fa";
 import avatar from "../../../../public/images/me.webp";
 import shapeWawes from "../../../../public/icons/shape-wawes.svg";
 import shapeCircle from "../../../../public/icons/shape-circle.svg";
-import moment from "moment";
-import { useEffect, useState } from "react";
 
 export default function Hero() {
     return (
-        <section id="hero" className="px-5 hero pb-28 lg:px-5">
-            <div className="container grid pt-10 md:mt-12 home__container gap-y-16">
+        <section id="hero" className="px-5 mt-5 hero pb-28 lg:px-5">
+            <div className="container grid home__container gap-y-16">
                 <div className="grid items-center mx-auto gap-y-8 md:gap-y-14 home__data md:order-2">
                     <div className="flex flex-col order-3 font-mono text-2xl font-medium home__title md:order-none md:gap-y-4">
-                        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                        <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl">
                             Hello I&apos;m Brian
                         </p>
                         <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
@@ -32,14 +30,14 @@ export default function Hero() {
 
                     <div className="grid order-1 home__blob md:-order-none">
                         <div className="home__perfil">
-                            {/* <Image
+                            <Image
                                 src={avatar}
                                 className="pointer-events-none"
                                 loading="lazy"
                                 draggable="false"
                                 alt="home perfil"
                                 rel="preload"
-                            /> */}
+                            />
                         </div>
 
                         <Image
@@ -109,7 +107,7 @@ export default function Hero() {
                             <li>Website</li>
                             <li>Animation</li>
                             <li>Wordpress</li>
-                            <li>React/Next</li>
+                            <li>React/Next JS</li>
                         </ul>
                     </div>
                 </div>

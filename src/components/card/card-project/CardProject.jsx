@@ -9,11 +9,11 @@ export default function CardProject(props) {
             </div>
             <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                    <h4 className="block font-sans text-lg antialiased font-semibold leading-snug tracking-normal md:text-xl text-blue-gray-900">
+                    <h4 className="block font-sans text-lg antialiased font-semibold leading-snug tracking-normal md:text-lg text-blue-gray-900">
                         {props.name || "Project Name"}
                     </h4>
                 </div>
-                <p className="block font-sans text-sm antialiased leading-relaxed text-gray-700 md:text-base">
+                <p className="block font-mono text-sm antialiased leading-relaxed text-gray-700 md:text-base">
                     Enter a freshly updated and thoughtfully furnished peaceful
                     home surrounded by ancient trees, stone walls, and open
                     meadows.

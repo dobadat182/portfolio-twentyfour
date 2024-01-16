@@ -6,7 +6,7 @@ import Header from "@/components/header/Header";
 import { Open_Sans, Cardo, Inter } from "next/font/google";
 
 // Fonts
-const openSans = Inter({
+const openSans = Open_Sans({
     subsets: ["latin"],
     display: "swap",
     variable: "--font-opensans",
