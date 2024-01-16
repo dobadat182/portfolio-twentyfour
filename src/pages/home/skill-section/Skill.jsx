@@ -9,7 +9,7 @@ export default function Skill() {
                         </h2>
                     </div>
 
-                    <div className="flex flex-col max-w-screen-md px-5 mx-auto skill__list gap-y-8 md:gap-y-12">
+                    <div className="container flex flex-col max-w-screen-lg px-5 mx-auto skill__list gap-y-8 md:gap-y-12">
                         <div className="flex flex-col items-center mx-auto md:flex-row gap-y-3 md:gap-y-0">
                             <div className="flex">
                                 <p className="text-sm font-light">

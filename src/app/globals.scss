@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+// Dung color pallte gray cua tailwind
+
+// Variables
 $font-primary: var(--font-opensans);
 $font-second: var(--font-cardo);
+$background-body: #f9fafb;
 
-$background-body: #f9f9f9;
+
 @layer base {
     h1 {
         @apply text-2xl;
@@ -20,8 +25,7 @@ $background-body: #f9f9f9;
     }
 
     @media (prefers-color-scheme: dark) {
-        :root {
-        }
+    
     }
 }
 
@@ -34,7 +38,6 @@ body {
     }
 }
 
-// Header
 header {
     position: fixed;
     bottom: 30px;
