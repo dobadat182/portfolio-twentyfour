@@ -139,7 +139,7 @@ export default function Projects() {
 
                         <h2
                             id="carousel-heading"
-                            className="text-3xl font-medium text-center uppercase md:text-5xl"
+                            className="heading--title"
                         >
                             Projects
                         </h2>

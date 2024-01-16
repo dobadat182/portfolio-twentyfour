@@ -4,7 +4,7 @@ export default function Skill() {
             <div className="inner">
                 <div className="inner__wrapper">
                     <div className="mb-10 text-center inner__heading">
-                        <h2 className="mb-5 text-3xl font-medium text-center uppercase md:text-5xl">
+                        <h2 className="heading--title">
                             My Skills
                         </h2>
                     </div>
@@ -28,7 +28,7 @@ export default function Skill() {
 
                         <div className="flex gap-x-4 md:gap-x-3 skill__topic">
                             <div className="basis-1/4">
-                                <h5 className="py-1 text-base font-bold md:text-lg">
+                                <h5 className="py-1 font-mono text-base font-bold md:text-lg">
                                     Languages:
                                 </h5>
                             </div>
@@ -50,7 +50,7 @@ export default function Skill() {
 
                         <div className="flex gap-x-4 skill__topic">
                             <div className="basis-1/4">
-                                <h5 className="py-1 text-base font-bold md:text-lg">CMS:</h5>
+                                <h5 className="py-1 font-mono text-base font-bold md:text-lg">CMS:</h5>
                             </div>
                             <ul className="flex flex-wrap justify-end gap-2 text-base md:justify-start basis-3/4 columns-2 text-nowrap">
                                 <li className="badge__item frequently">
@@ -69,7 +69,7 @@ export default function Skill() {
 
                         <div className="flex gap-x-3 skill__topic">
                             <div className="basis-1/4">
-                                <h5 className="py-1 text-base font-bold md:text-lg">
+                                <h5 className="py-1 font-mono text-base font-bold md:text-lg">
                                     Frameworks:
                                 </h5>
                             </div>
@@ -92,7 +92,7 @@ export default function Skill() {
 
                         <div className="flex gap-x-3 skill__topic">
                             <div className="basis-1/4">
-                                <h5 className="py-1 text-base font-bold md:text-lg">
+                                <h5 className="py-1 font-mono text-base font-bold md:text-lg">
                                     Tools & Softwares:
                                 </h5>
                             </div>
@@ -114,7 +114,7 @@ export default function Skill() {
 
                         <div className="flex gap-x-3 skill__topic">
                             <div className="basis-1/4">
-                                <h5 className="py-1 text-base font-bold md:text-lg">
+                                <h5 className="py-1 font-mono text-base font-bold md:text-lg">
                                     Libraries:
                                 </h5>
                             </div>

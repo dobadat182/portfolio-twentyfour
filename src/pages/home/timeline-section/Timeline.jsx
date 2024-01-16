@@ -9,7 +9,7 @@ export default function Timeline() {
             <div className="container">
                 <h2
                     id="carousel-heading"
-                    className="text-3xl font-medium text-center uppercase md:text-5xl"
+                    className="heading--title"
                 >
                     Timeline
                 </h2>

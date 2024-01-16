@@ -1,21 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-// font-family: 'Lora', serif;
-// font-family: 'Roboto', sans-serif;
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-$font-primary: "Lora", sans-serif;
-$background-body: #fdfdfd;
+$font-primary: var(--font-opensans);
+$font-second: var(--font-cardo);
+
+$background-body: #f9f9f9;
 @layer base {
     h1 {
         @apply text-2xl;
     }
     h2 {
         @apply text-xl;
-        font-family: $font-primary;
     }
 
     /* ... */
@@ -32,7 +28,10 @@ $background-body: #fdfdfd;
 body {
     background-color: $background-body;
     text-rendering: optimizeLegibility;
-    font-family: "Roboto", sans-serif;
+
+    .heading--title {
+        @apply font-mono text-3xl font-medium text-center uppercase md:text-5xl;
+    }
 }
 
 // Header
@@ -212,9 +211,6 @@ header {
     }
 }
 
-.hero {
-    // height: 200vh;
-}
 .home {
     &__container {
         grid-template-columns: 1fr 2fr 1fr;
@@ -224,9 +220,8 @@ header {
     }
 
     &__title {
-        font-family: "Lora", sans-serif;
         p {
-            text-align: center;
+            @apply text-slate-800 text-center;
         }
     }
 
@@ -327,24 +322,18 @@ header {
         grid-template-rows: repeat(3, 130px);
 
         h3 {
-            @apply text-sm;
-            color: hsl(207, 4%, 56%);
+            @apply text-sm font-mono text-gray-400;
             margin-bottom: 1rem;
         }
+
         p,
         a,
         ul {
-            @apply text-xl;
-            @apply text-base;
-            color: hsl(207, 4%, 16%);
-            // font-family: 'Lora', sans-serif;
-            @apply font-sans;
+            @apply text-base text-slate-800;
         }
         &-number {
             @apply text-4xl;
             @apply font-sans;
-
-            // font-family: 'Lora', sans-serif;
         }
 
         &:nth-child(3) * {

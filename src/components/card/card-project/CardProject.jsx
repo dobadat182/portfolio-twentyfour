@@ -2,18 +2,18 @@ import Image from "next/image";
 
 export default function CardProject(props) {
     return (
-        <div className="relative flex w-full max-w-[26rem] flex-col rounded-md bg-white bg-clip-border text-gray-700 shadow-md">
-            <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-sm rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+        <div className="relative flex w-full max-w-[26rem] flex-col rounded-lg bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative mx-4 mt-4 overflow-hidden text-white rounded-lg shadow-sm bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
                 <div className="w-[384px] h-[256px]">Default images</div>
                 <div className="absolute inset-0 w-full h-full bg-gray-300"></div>
             </div>
             <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                    <h4 className="block font-sans text-lg antialiased font-medium leading-snug tracking-normal md:text-xl text-blue-gray-900">
+                    <h4 className="block font-sans text-lg antialiased font-semibold leading-snug tracking-normal md:text-xl text-blue-gray-900">
                         {props.name || "Project Name"}
                     </h4>
                 </div>
-                <p className="block font-sans text-sm antialiased font-light leading-relaxed text-gray-700 md:text-base">
+                <p className="block font-sans text-sm antialiased leading-relaxed text-gray-700 md:text-base">
                     Enter a freshly updated and thoughtfully furnished peaceful
                     home surrounded by ancient trees, stone walls, and open
                     meadows.
@@ -94,15 +94,15 @@ export default function CardProject(props) {
                     </span>
                 </div> */}
             </div>
-            <div className="p-6 pt-3">
+            {/* <div className="p-6 pt-3">
                 <a
                     href={props.url}
-                    className="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    className="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     target="_blank"
                 >
                     View
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 }
