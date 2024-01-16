@@ -120,8 +120,7 @@ export default function Hero() {
                             YEARS OF EXPERIENCE
                         </h3>
                         <div className="home__info-number">
-                            <span>2
-                            </span>
+                            <span>2</span>
                         </div>
                     </div>
                     <div>

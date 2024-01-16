@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 // Dung color pallte gray cua tailwind
 
 // Variables
 $font-primary: var(--font-opensans);
 $font-second: var(--font-cardo);
 $background-body: #f9fafb;
-
 
 @layer base {
     h1 {
@@ -25,7 +23,6 @@ $background-body: #f9fafb;
     }
 
     @media (prefers-color-scheme: dark) {
-    
     }
 }
 
