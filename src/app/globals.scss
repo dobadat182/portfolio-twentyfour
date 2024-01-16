@@ -251,9 +251,6 @@ header {
         justify-content: center;
         align-items: flex-end;
 
-        &:hover {
-        }
-
         @media (min-width: 1200px) {
             width: 340px;
             height: 520px;
@@ -312,8 +309,6 @@ header {
             transform: color 0.3s;
             @media (min-width: 1200px) {
                 font-size: 1.5rem;
-            }
-            &:hover {
             }
         }
     }
