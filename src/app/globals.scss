@@ -5,8 +5,6 @@
 // Dung color pallte gray cua tailwind
 
 // Variables
-$font-primary: var(--font-opensans);
-$font-second: var(--font-cardo);
 $background-body: #f9fafb;
 
 @layer base {
@@ -317,17 +315,17 @@ header {
         grid-template-rows: repeat(3, 130px);
 
         h3 {
-            @apply text-xs font-sans text-gray-400;
+            @apply text-xs font-bold font-sans text-gray-400;
             margin-bottom: 1rem;
         }
 
         p,
         a,
         ul {
-            @apply text-base font-mono font-semibold text-slate-800;
+            @apply text-base font-mono font-normal tracking-wide text-slate-800;
         }
         &-number {
-            @apply text-4xl font-mono font-semibold;
+            @apply text-4xl font-mono font-normal;
         }
 
         &:nth-child(3) * {

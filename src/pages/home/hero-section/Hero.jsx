@@ -16,16 +16,10 @@ export default function Hero() {
         <section id="hero" className="px-5 mt-5 hero pb-28 lg:px-5">
             <div className="container grid home__container gap-y-16">
                 <div className="grid items-center mx-auto gap-y-8 md:gap-y-14 home__data md:order-2">
-                    <div className="flex flex-col order-3 font-mono text-2xl font-medium home__title md:order-none md:gap-y-4">
-                        <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl">
-                            Hello I&apos;m Brian
-                        </p>
-                        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-                            Frontend Developer
-                        </p>
-                        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-                            Based in Ho Chi Minh
-                        </p>
+                    <div className="flex flex-col order-3 font-mono text-xl md:text-3xl lg:text-4xl xl:text-5xl home__title md:order-none md:gap-y-4">
+                        <p>Hello I&apos;m Brian</p>
+                        <p>Frontend Developer</p>
+                        <p>Based in Ho Chi Minh</p>
                     </div>
 
                     <div className="grid order-1 home__blob md:-order-none">

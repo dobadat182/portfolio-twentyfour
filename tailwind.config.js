@@ -10,7 +10,7 @@ module.exports = {
             fontFamily: {
                 // 👇 Add CSS variables
                 sans: ["var(--font-opensans)"],
-                mono: ["var(--font-cardo)"],
+                mono: ["var(--font-lora)"],
             },
         },
     },

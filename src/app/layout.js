@@ -2,8 +2,10 @@ import "./globals.scss";
 import "@splidejs/react-splide/css/core";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Open_Sans, Lora } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
+
 import Header from "@/components/header/Header";
-import { Open_Sans, Cardo, Inter } from "next/font/google";
 
 // Fonts
 const openSans = Open_Sans({
@@ -12,11 +14,10 @@ const openSans = Open_Sans({
     variable: "--font-opensans",
 });
 
-const cardo = Cardo({
-    weight: ["400", "700"],
+const lora = Lora({
     subset: ["latin"],
     display: "swap",
-    variable: "--font-cardo",
+    variable: "--font-lora",
     preload: false,
 });
 
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
     return (
         <html
             lang="en"
-            className={`${openSans.variable} ${cardo.variable} font-sans`}
+            className={`${openSans.variable} ${lora.variable} font-sans`}
         >
             <body>
                 <Header />
@@ -37,6 +38,8 @@ export default function RootLayout({ children }) {
 
                 <SpeedInsights />
             </body>
+
+            <GoogleTagManager gtmId="G-FCQ7ZD731H" />
         </html>
     );
 }
