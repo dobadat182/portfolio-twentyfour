@@ -6,6 +6,7 @@ import { Open_Sans, Lora } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 // Fonts
 const openSans = Open_Sans({
@@ -35,11 +36,10 @@ export default function RootLayout({ children }) {
             <body>
                 <Header />
                 {children}
+                <Footer />
 
                 <SpeedInsights />
             </body>
-
-            <GoogleTagManager gtmId="G-FCQ7ZD731H" />
         </html>
     );
 }
