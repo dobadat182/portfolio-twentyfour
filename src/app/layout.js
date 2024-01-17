@@ -3,7 +3,6 @@ import "@splidejs/react-splide/css/core";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Open_Sans, Lora } from "next/font/google";
-import { GoogleTagManager } from "@next/third-parties/google";
 
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
