@@ -6,7 +6,7 @@ export default function Contact() {
                     <p class="font-mono font-medium text-blue-500">Contact</p>
 
                     <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl">
-                        I'd love to hear from you
+                        I&apos;d love to hear from you
                     </h1>
 
                     <p class="mt-3 text-gray-500 dark:text-gray-400">
