@@ -19,7 +19,7 @@ export default function Timeline() {
                             <div className="flex flex-col overflow-hidden md:flex-row">
                                 <div className="mb-4 md:mb-0 md:p-3 columns-1 md:basis-1/4">
                                     <Image
-                                        className="hidden rounded md:block"
+                                        className="hidden shadow-lg rounded-xl shadow-slate-200 md:block"
                                         src={fg_logo}
                                         width={150}
                                         height={150}
@@ -29,7 +29,7 @@ export default function Timeline() {
                                 <div className="flex flex-col md:p-3 columns-2 md:basis-3/4">
                                     <div className="flex items-center mb-3 gap-x-4 company__info">
                                         <Image
-                                            className="rounded md:hidden"
+                                            className="shadow-lg rounded-xl shadow-slate-200 md:hidden"
                                             src={fg_logo}
                                             width={80}
                                             height={80}
@@ -109,7 +109,7 @@ export default function Timeline() {
                             <div className="flex flex-col overflow-hidden md:flex-row">
                                 <div className="mb-4 md:mb-0 md:p-3 columns-1 md:basis-1/4">
                                     <Image
-                                        className="hidden rounded md:block"
+                                        className="hidden shadow-lg rounded-xl shadow-slate-200 md:block"
                                         src={namtech_logo}
                                         width={150}
                                         height={150}
@@ -119,7 +119,7 @@ export default function Timeline() {
                                 <div className="flex flex-col md:p-3 columns-2 md:basis-3/4">
                                     <div className="flex items-center mb-3 gap-x-4 company__info">
                                         <Image
-                                            className="rounded md:hidden"
+                                            className="shadow-lg shadow-slate-200 rounded-xl md:hidden"
                                             src={namtech_logo}
                                             width={80}
                                             height={80}
