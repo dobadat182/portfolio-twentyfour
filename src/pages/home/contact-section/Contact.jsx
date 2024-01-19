@@ -1,30 +1,18 @@
 export default function Contact() {
     return (
-        <section className="bg-white min-w-[80%]">
+        <section className="bg-white rounded-xl mb-10 min-w-[90%] mx-5 md:min-w-[80%]">
             <div className="container px-6 py-12 mx-auto">
                 <div className="text-center ">
-                    <p className="font-mono font-medium text-blue-500">
-                        Contact
-                    </p>
+                    <h2 className="heading--title">Contact</h2>
 
-                    <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl">
+                    <p className="mt-1 font-mono text-xs italic md:text-sm text-slate-400">
                         I&apos;d love to hear from you
-                    </h1>
-
-                    <p className="mt-3 text-gray-500 dark:text-gray-400">
-                        Chat with me.
                     </p>
                 </div>
 
-                {/* <image
-                    className="block object-cover w-full mt-10 rounded-lg"
-                    src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=100"
-                    alt=""
-                /> */}
-
-                <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2 sm:grid-cols-2 ">
+                <div className="grid grid-cols-1 gap-5 mt-10 md:gap-12 lg:grid-cols-2 sm:grid-cols-2 ">
                     <div className="p-4 rounded-lg bg-blue-50 md:p-6">
-                        <span className="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80">
+                        <span className="inline-block p-3 rounded-lg text-sky-500 bg-blue-100/80">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -41,19 +29,22 @@ export default function Contact() {
                             </svg>
                         </span>
 
-                        <h2 className="mt-4 text-base font-medium text-gray-800">
+                        <h2 className="mt-4 font-mono text-base font-semibold text-gray-700 uppercase md:text-lg">
                             Email
                         </h2>
-                        <p className="mt-2 text-sm text-gray-500">
+                        <p className="text-xs italic text-gray-300 md:text-sm">
                             Speak to our friendly team.
                         </p>
-                        <p className="mt-2 text-sm text-blue-500">
+                        <a
+                            href="mailto: badat336@gmail.com"
+                            className="block mt-2 text-sm text-gray-500"
+                        >
                             badat336@gmail.com
-                        </p>
+                        </a>
                     </div>
 
                     <div className="p-4 rounded-lg bg-blue-50 md:p-6">
-                        <span className="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80">
+                        <span className="inline-block p-3 rounded-lg text-sky-500 bg-blue-100/80">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -70,15 +61,25 @@ export default function Contact() {
                             </svg>
                         </span>
 
-                        <h2 className="mt-4 text-base font-medium text-gray-800">
-                            Chat to sales
+                        <h2 className="mt-4 font-mono text-base font-semibold text-gray-700 uppercase md:text-xl">
+                            Chat
                         </h2>
-                        <p className="mt-2 text-sm text-gray-500">
-                            Mon-Fri from 10am to 22:00.
+                        <p className="text-xs italic text-gray-300 md:text-sm">
+                            Monday - Friday (10:00 AM - 22:00 PM)
                         </p>
-                        <p className="mt-2 text-sm text-blue-500">
-                            messenger / zalo / instagram
-                        </p>
+                        <ul className="mt-2 text-sm text-gray-500">
+                            <li>
+                                <a href="https://www.facebook.com/dobadat182">
+                                    Facebook
+                                </a>
+                                <a
+                                    className="ml-2"
+                                    href="https://www.instagram.com/dbadat182/"
+                                >
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ import namtech_logo from "../../../../public/images/namtech-logo.png";
 
 export default function Timeline() {
     return (
-        <div className="mb-14 md:mb-32 timeline">
+        <div id="timeline" className="mb-14 md:mb-32 ">
             <div className="container">
                 <h2 id="carousel-heading" className="heading--title">
                     Journey
@@ -48,10 +48,10 @@ export default function Timeline() {
                                             </time>
                                         </div>
                                     </div>
-                                    <div className="pl-3 md:pl-4 md:px-7 company__experience">
+                                    <div className="pl-3 mt-2 md:pl-4 md:px-7 company__experience">
                                         <ol className="relative border-gray-100 border-s">
                                             <li className="mb-10 ms-6">
-                                                <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3 ring-8 ring-gray-50">
+                                                <span className="absolute flex items-center justify-center w-6 h-6 rounded-full bg-gray-50 -start-3 ring-8 ring-gray-50">
                                                     <svg
                                                         className="w-2.5 h-2.5 text-blue-800"
                                                         aria-hidden="true"
@@ -62,7 +62,7 @@ export default function Timeline() {
                                                         <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                                                     </svg>
                                                 </span>
-                                                <h3 className="mb-1 text-base font-semibold text-gray-900 md:text-lg">
+                                                <h3 className="mb-1 text-base font-semibold text-gray-900 underline md:text-lg decoration-sky-500">
                                                     Frontend Developer
                                                 </h3>
                                                 <time className="block mb-3 text-xs font-normal leading-none text-gray-500 md:text-sm">
@@ -138,10 +138,10 @@ export default function Timeline() {
                                             </time>
                                         </div>
                                     </div>
-                                    <div className="pl-3 md:pl-4 md:px-7 company__experience">
+                                    <div className="pl-3 mt-2 md:pl-4 md:px-7 company__experience">
                                         <ol className="relative border-gray-200 border-s">
                                             <li className="mb-10 ms-6">
-                                                <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3 ring-8 ring-gray-50">
+                                                <span className="absolute flex items-center justify-center w-6 h-6 rounded-full bg-gray-50 -start-3 ring-8 ring-gray-50">
                                                     <svg
                                                         className="w-2.5 h-2.5 text-blue-800"
                                                         aria-hidden="true"
@@ -152,7 +152,7 @@ export default function Timeline() {
                                                         <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                                                     </svg>
                                                 </span>
-                                                <h3 className="mb-1 text-base font-semibold text-gray-900 md:text-lg">
+                                                <h3 className="mb-1 text-base font-semibold text-gray-900 underline md:text-lg decoration-sky-500">
                                                     Wordpress Developer
                                                 </h3>
                                                 <time className="block mb-3 text-xs font-normal leading-none text-gray-500 md:text-sm">
@@ -198,7 +198,7 @@ export default function Timeline() {
                                             </li>
 
                                             <li className="mb-10 ms-6">
-                                                <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                                                <span className="absolute flex items-center justify-center w-6 h-6 rounded-full bg-gray-50 -start-3 ring-8 ring-gray-50">
                                                     <svg
                                                         className="w-2.5 h-2.5 text-blue-800"
                                                         aria-hidden="true"
@@ -209,13 +209,13 @@ export default function Timeline() {
                                                         <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                                                     </svg>
                                                 </span>
-                                                <h3 className="mb-1 text-lg font-semibold text-gray-900">
+                                                <h3 className="mb-1 text-base font-semibold text-gray-900 underline md:text-lg decoration-sky-500">
                                                     Nuxt JS
                                                 </h3>
                                                 <time className="block mb-3 text-xs font-normal leading-none text-gray-500 md:text-sm">
                                                     Aug 2022 - Oct 2022 · 3 mos
                                                 </time>
-                                                <ul className="space-y-1 list-disc list-outside md:pl-3">
+                                                <ul className="max-w-lg pl-3 space-y-1 text-sm list-disc list-outside md:text-base">
                                                     <li>
                                                         Split large components
                                                         to small components
@@ -242,7 +242,7 @@ export default function Timeline() {
                                             </li>
 
                                             <li className="mb-10 ms-6">
-                                                <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                                                <span className="absolute flex items-center justify-center w-6 h-6 rounded-full bg-gray-50 -start-3 ring-8 ring-gray-50">
                                                     <svg
                                                         className="w-2.5 h-2.5 text-blue-800"
                                                         aria-hidden="true"
@@ -253,13 +253,13 @@ export default function Timeline() {
                                                         <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                                                     </svg>
                                                 </span>
-                                                <h3 className="mb-1 text-lg font-semibold text-gray-900">
+                                                <h3 className="mb-1 text-base font-semibold text-gray-900 underline decoration-sky-500 md:text-lg">
                                                     Internship
                                                 </h3>
                                                 <time className="block mb-3 text-xs font-normal leading-none text-gray-500 md:text-sm">
                                                     Aug 2021 - Sep 2021 · 2 mos
                                                 </time>
-                                                <ul className="space-y-1 list-disc list-outside md:pl-3">
+                                                <ul className="max-w-lg pl-3 space-y-1 text-sm list-disc list-outside md:text-base">
                                                     <li>
                                                         Develop website
                                                         interface (UI/UX)
