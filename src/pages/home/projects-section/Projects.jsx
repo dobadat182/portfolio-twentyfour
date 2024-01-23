@@ -101,7 +101,8 @@ export default function Projects() {
         pagination: false,
         drag: "free",
         snap: true,
-
+        gap: "2rem",
+        fixedWidth: "26rem",
         autoScroll: {
             pauseOnHover: true,
             pauseOnFocus: true,
@@ -109,20 +110,18 @@ export default function Projects() {
             speed: 1.5,
         },
 
-        gap: "2rem",
-        fixedWidth: "26rem",
-
+        mediaQuery: "max",
         breakpoints: {
             768: {
+                focus: "1",
                 fixedWidth: "90%",
-                gap: 20,
                 autoScroll: false,
-                padding: { right: "20" },
+                gap: 20,
+                padding: { right: "20%" },
             },
         },
     };
 
-    useEffect(() => {});
     return (
         <section id="projects" className="w-full mb-14 md:mb-32">
             <div className="inner">
@@ -132,15 +131,12 @@ export default function Projects() {
                     options={options}
                     extensions={{ AutoScroll }}
                 >
-                    <div className="flex justify-between px-5 my-5 splide__arrows md:justify-center md:my-10">
+                    <div className="flex justify-between px-5 my-5 mb-10 splide__arrows md:justify-center md:my-10">
                         <button className="splide__arrow splide__arrow--prev md:hidden">
                             <FaChevronLeft />
                         </button>
 
-                        <h2
-                            id="carousel-heading"
-                            className="heading--title"
-                        >
+                        <h2 id="carousel-heading" className="heading--title">
                             Projects
                         </h2>
 
@@ -149,7 +145,7 @@ export default function Projects() {
                         </button>
                     </div>
 
-                    <SplideTrack>
+                    <SplideTrack className="!pl-5 !pr-5 sm:!pr-0 md:!pl-0 md:ml-0">
                         {projects.map((element, index) => (
                             <SplideSlide key={index}>
                                 <CardProject

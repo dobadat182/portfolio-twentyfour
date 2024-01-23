@@ -1,4 +1,4 @@
-import "./globals.scss";
+import "@/styles/global.scss";
 import "@splidejs/react-splide/css/core";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -34,8 +34,6 @@ export default function RootLayout({ children }) {
             <body>
                 <Header />
                 {children}
-
-                <SpeedInsights />
             </body>
         </html>
     );

@@ -13,7 +13,7 @@ import shapeCircle from "../../../../public/icons/shape-circle.svg";
 
 export default function Hero() {
     return (
-        <section id="hero" className="px-5 mt-5 hero pb-28 lg:px-5">
+        <section id="hero" className="px-5 mt-10 mb-20 hero md:mb-28 lg:px-5">
             <div className="container grid home__container gap-y-16">
                 <div className="grid items-center mx-auto gap-y-8 md:gap-y-14 home__data md:order-2">
                     <div className="flex flex-col order-3 font-mono text-xl md:text-3xl lg:text-4xl xl:text-5xl home__title md:order-none md:gap-y-4">
@@ -24,14 +24,16 @@ export default function Hero() {
 
                     <div className="grid order-1 home__blob md:-order-none">
                         <div className="home__perfil">
-                            <Image
+                            {/* <Image
                                 src={avatar}
                                 className="pointer-events-none"
                                 loading="lazy"
                                 draggable="false"
                                 alt="home perfil"
                                 rel="preload"
-                            />
+                                width={340}
+                                height={540}
+                            /> */}
                         </div>
 
                         <Image
@@ -41,6 +43,8 @@ export default function Hero() {
                             loading="eager"
                             priority={true}
                             className="pointer-events-none home__shape-wawes"
+                            width={100}
+                            height={70}
                         />
 
                         <Image
@@ -50,6 +54,8 @@ export default function Hero() {
                             loading="eager"
                             priority={true}
                             className="pointer-events-none home__shape-circle"
+                            width={300}
+                            height={300}
                         />
                     </div>
 
