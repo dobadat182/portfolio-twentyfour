@@ -12,7 +12,7 @@ export default function Contact() {
 
                 <div className="grid grid-cols-1 gap-5 mt-10 md:gap-12 lg:grid-cols-2 sm:grid-cols-2 ">
                     <div className="p-4 rounded-lg bg-sky-50 md:p-6">
-                        <span className="inline-block p-3 rounded-lg text-sky-500 bg-blue-100/80">
+                        <span className="inline-block p-3 text-gray-500 rounded-lg bg-blue-100/80">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -44,7 +44,7 @@ export default function Contact() {
                     </div>
 
                     <div className="p-4 rounded-lg bg-sky-50 md:p-6">
-                        <span className="inline-block p-3 rounded-lg text-sky-500 bg-blue-100/80">
+                        <span className="inline-block p-3 text-gray-500 rounded-lg bg-blue-100/80">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
