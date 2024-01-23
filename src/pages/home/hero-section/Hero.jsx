@@ -24,7 +24,7 @@ export default function Hero() {
 
                     <div className="grid order-1 home__blob md:-order-none">
                         <div className="home__perfil">
-                            {/* <Image
+                            <Image
                                 src={avatar}
                                 className="pointer-events-none"
                                 loading="lazy"
@@ -33,7 +33,7 @@ export default function Hero() {
                                 rel="preload"
                                 width={340}
                                 height={540}
-                            /> */}
+                            />
                         </div>
 
                         <Image

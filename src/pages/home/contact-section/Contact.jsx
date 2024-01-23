@@ -6,7 +6,7 @@ export default function Contact() {
                     <h2 className="heading--title">Contact</h2>
 
                     <p className="mt-1 font-mono text-xs italic md:text-sm text-slate-400">
-                        I&apos;d love to hear from you
+                        &quot; I would love to hear from you &quot;
                     </p>
                 </div>
 
