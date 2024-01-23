@@ -2,9 +2,8 @@ import "@/styles/global.scss";
 import "@splidejs/react-splide/css/core";
 
 import { Open_Sans, Lora } from "next/font/google";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 
 const openSans = Open_Sans({
     subsets: ["latin"],

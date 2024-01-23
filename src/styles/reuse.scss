@@ -1,0 +1,23 @@
+.badge {
+    &__item {
+        @apply relative inline-flex justify-center items-center overflow-hidden bg-slate-100 px-3 py-2 rounded-md transition-all duration-200 cursor-pointer text-sm md:text-base;
+
+        &.frequently::after {
+            content: "";
+            @apply absolute block w-full bottom-0 h-0.5 bg-slate-200 left-0;
+        }
+        &.occasionally::after {
+            content: "";
+            @apply absolute block w-1/4 bottom-0 h-0.5 bg-slate-200 left-0;
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+
+            &.frequently::after,
+            &.occasionally::after {
+                @apply bg-slate-400;
+            }
+        }
+    }
+}
