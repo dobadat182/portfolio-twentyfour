@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import profilePic from "../../../../public/images/profile-picture.jpeg";
-import fg_logo from "../../../../public/images/fg-logo.webp";
-import namtech_logo from "../../../../public/images/namtech-logo.png";
+import profilePic from "../../../../../public/images/profile-picture.jpeg";
+import fg_logo from "../../../../../public/images/fg-logo.webp";
+import namtech_logo from "../../../../../public/images/namtech-logo.png";
 
 export default function Timeline() {
     return (

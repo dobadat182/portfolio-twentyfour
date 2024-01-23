@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer className="mt-24 bg-white rounded-lg shadow">
-            <div className="container p-4 mx-auto md:py-8">
+            <div className="container p-5 mx-auto md:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <a
                         href="https://flowbite.com/"
@@ -44,6 +44,14 @@ const Footer = () => {
                                 href="#contact"
                             >
                                 Contact
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="hover:underline me-4 md:me-6"
+                                href="/blog"
+                            >
+                                Blog
                             </Link>
                         </li>
                     </ul>

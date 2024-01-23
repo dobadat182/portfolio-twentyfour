@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function CardProject(props) {
+export default function ProjectCard(props) {
     return (
         <div className="relative flex w-full max-w-[26rem] flex-col rounded-lg overflow-hidden bg-white bg-clip-border text-gray-700 shadow-md">
             <div className="relative overflow-hidden text-white rounded-tr-lg shadow-sm bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">

@@ -1,15 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 import Image from "next/image";
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-import avatar from "../../../../public/images/me.webp";
-import shapeWawes from "../../../../public/icons/shape-wawes.svg";
-import shapeCircle from "../../../../public/icons/shape-circle.svg";
+import avatar from "../../../../../public/images/me.webp";
+import shapeWawes from "../../../../../public/icons/shape-wawes.svg";
+import shapeCircle from "../../../../../public/icons/shape-circle.svg";
 
 export default function Hero() {
     return (
@@ -26,13 +24,11 @@ export default function Hero() {
                         <div className="home__perfil">
                             <Image
                                 src={avatar}
-                                className="pointer-events-none"
+                                className="w-auto h-auto pointer-events-none"
                                 loading="lazy"
                                 draggable="false"
                                 alt="home perfil"
                                 rel="preload"
-                                width={340}
-                                height={540}
                             />
                         </div>
 

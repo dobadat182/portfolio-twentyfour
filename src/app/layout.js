@@ -2,11 +2,10 @@ import "@/styles/global.scss";
 import "@splidejs/react-splide/css/core";
 
 import { Open_Sans, Lora } from "next/font/google";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
-// Fonts
 const openSans = Open_Sans({
     subsets: ["latin"],
     display: "swap",
@@ -33,7 +32,7 @@ export default function RootLayout({ children }) {
         >
             <body>
                 <Header />
-                {children}
+                <main className="main">{children}</main>
                 <Footer />
             </body>
         </html>

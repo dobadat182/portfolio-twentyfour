@@ -1,6 +1,6 @@
 "use client";
 
-import CardProject from "@/components/card/card-project/CardProject";
+import ProjectCard from "@/components/Card/ProjectCard/ProjectCard";
 
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
@@ -64,7 +64,7 @@ export default function Projects() {
                     <SplideTrack className="!pl-5 !pr-5 sm:!pr-0 md:!pl-0 md:ml-0">
                         {projects.map((element, index) => (
                             <SplideSlide key={index}>
-                                <CardProject
+                                <ProjectCard
                                     name={element.name}
                                     url={element.url}
                                 />
