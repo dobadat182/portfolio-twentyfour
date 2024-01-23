@@ -1,10 +1,10 @@
 import "@/styles/global.scss";
 import "@splidejs/react-splide/css/core";
 
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Open_Sans, Lora } from "next/font/google";
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // Fonts
 const openSans = Open_Sans({
@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
             <body>
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );

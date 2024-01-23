@@ -11,7 +11,7 @@ export default function Contact() {
                 </div>
 
                 <div className="grid grid-cols-1 gap-5 mt-10 md:gap-12 lg:grid-cols-2 sm:grid-cols-2 ">
-                    <div className="p-4 rounded-lg bg-blue-50 md:p-6">
+                    <div className="p-4 rounded-lg bg-sky-50 md:p-6">
                         <span className="inline-block p-3 rounded-lg text-sky-500 bg-blue-100/80">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -29,10 +29,10 @@ export default function Contact() {
                             </svg>
                         </span>
 
-                        <h2 className="mt-4 font-mono text-base font-semibold text-gray-700 uppercase md:text-lg">
+                        <h2 className="mt-4 font-sans text-base font-semibold text-gray-700 uppercase md:text-lg">
                             Email
                         </h2>
-                        <p className="text-xs italic text-gray-300 md:text-sm">
+                        <p className="font-mono text-xs italic text-gray-300 md:text-sm">
                             Speak to our friendly team.
                         </p>
                         <a
@@ -43,7 +43,7 @@ export default function Contact() {
                         </a>
                     </div>
 
-                    <div className="p-4 rounded-lg bg-blue-50 md:p-6">
+                    <div className="p-4 rounded-lg bg-sky-50 md:p-6">
                         <span className="inline-block p-3 rounded-lg text-sky-500 bg-blue-100/80">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -61,10 +61,10 @@ export default function Contact() {
                             </svg>
                         </span>
 
-                        <h2 className="mt-4 font-mono text-base font-semibold text-gray-700 uppercase md:text-xl">
+                        <h2 className="mt-4 font-sans text-base font-semibold text-gray-700 uppercase md:text-xl">
                             Chat
                         </h2>
-                        <p className="text-xs italic text-gray-300 md:text-sm">
+                        <p className="font-mono text-xs italic text-gray-300 md:text-sm">
                             Monday - Friday (10:00 AM - 22:00 PM)
                         </p>
                         <ul className="mt-2 text-sm text-gray-500">
