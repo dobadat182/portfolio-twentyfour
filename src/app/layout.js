@@ -29,6 +29,17 @@ export default function RootLayout({ children }) {
             lang="en"
             className={`${openSans.variable} ${lora.variable} font-sans`}
         >
+            <head>
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQ7ZD731H"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                
+                  gtag('config', 'G-FCQ7ZD731H');
+                </script>
+            </head>
             <body>
                 <Header />
                 <main className="main">{children}</main>
